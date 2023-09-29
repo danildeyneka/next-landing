@@ -1,0 +1,40 @@
+.ad {
+  grid-area: ads;
+  padding: 12px;
+  position: relative;
+
+  &__link {
+    font-size: 12px;
+    position: absolute;
+  }
+
+  &__disclaimer {
+    color: #848484;
+    font-size: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    height: 276px;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background: var(--grey-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__desc {
+    color: #262626;
+
+    // adds ellipsis when overflowed
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
