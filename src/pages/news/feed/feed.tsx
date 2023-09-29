@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { ReactNode } from "react";
 import { Heading } from '@/components/common/heading/heading';
 import s from './feed.module.scss';
 import { feed } from '@/assets/data/feed';
@@ -6,7 +6,7 @@ import { FeedCard } from '@/components/cards/feed-card/feed-card';
 import Image from 'next/image';
 import fire from '@/assets/images/common/fire.svg';
 
-export const Feed: FC = () => {
+export default function Feed(): ReactNode {
   const mappedFeed = feed.map((i) => <FeedCard content={i.content} timestamp={i.timestamp} tag={i.tag} key={`${i.content}${i.timestamp}`} />);
   const runningLineBody = [...Array(6)].map((i, n) => (
     <span className={s.feed__line} key={n}>

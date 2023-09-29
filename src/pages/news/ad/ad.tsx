@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import { ReactNode } from 'react';
 import s from './ad.module.scss';
 
-export const Ad: FC = () => {
+export default function Ad(): ReactNode {
   return (
     <section className={s.ad}>
       <span className={s.ad__link}>Ссылка на сайт</span>
@@ -10,4 +10,4 @@ export const Ad: FC = () => {
       <p className={s.ad__desc}>Текст длинного рекламного объявления</p>
     </section>
   );
-};
+}
