@@ -1,14 +1,47 @@
 .feed {
   grid-area: feed;
   padding: 30px 32px 0 32px;
+  position: relative;
 
-  &__wrapper {
+  &__content {
     padding-top: 24px;
   }
 
-  &__line {
+  &__lineWrapper {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 12px 12px;
+    background: #262626;
+    color: #fff;
+    overflow: hidden;
 
+    div {
+      display: flex;
+      justify-content: space-around;
+      width: 200%;
+      animation: marquee-infinite 10s linear infinite;
+    }
+  }
+
+  &__line {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 20px;
+    }
   }
 }
 
-
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,20 @@
+.incident {
+  width: 264px;
+  height: 295px;
+  border-radius: 12px;
+  background: #fff;
+
+  &__content {
+    padding: 3px 12px 12px;
+  }
+
+  &__time {
+    color: #848484;
+    font-size: 12px;
+  }
+
+  &__desc {
+    margin-top: 3px;
+    margin-bottom: 16px;
+  }
+}

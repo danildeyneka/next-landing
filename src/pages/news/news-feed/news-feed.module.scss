@@ -1,0 +1,10 @@
+.news {
+  grid-area: news;
+  padding: 32px;
+
+  &__content {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

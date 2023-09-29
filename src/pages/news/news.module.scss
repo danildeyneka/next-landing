@@ -1,0 +1,16 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    'feed ads'
+    'news news'
+    'incidents incidents';
+  grid-template-rows: 372px 272px 442px;
+  grid-template-columns: 1fr 264px;
+  column-gap: 16px;
+  row-gap: 8px;
+
+  > section {
+    border-radius: 12px;
+    background: #fff;
+  }
+}

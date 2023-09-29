@@ -1,0 +1,13 @@
+.incidents {
+  grid-area: incidents;
+  background: var(--grey) !important;
+
+  &__header {
+    padding: 18px 32px 18px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 13px;
+  }
+}

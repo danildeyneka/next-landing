@@ -1,0 +1,27 @@
+.header {
+  height: 76px;
+  padding: 20px 36px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 16px 16px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  width: 1184px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  margin-right: 17px;
+}

@@ -1,0 +1,17 @@
+.feed {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+
+  &__content {
+    span {
+      font-size: 14px;
+      color: var(--grey-neutral);
+    }
+  }
+
+  &__tag {
+    margin-top: 2px;
+    margin-left: 4px;
+  }
+}

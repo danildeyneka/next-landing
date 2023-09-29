@@ -1,0 +1,32 @@
+.tape {
+  padding: 12px 20px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+
+  p {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    filter: var(--orange-filter);
+  }
+
+  > * {
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: #fff;
+  background: #000;
+  border-radius: 12px;
+
+  img {
+    filter: var(--orange-filter);
+  }
+
+  &:hover {
+    filter: none;
+  }
+}
